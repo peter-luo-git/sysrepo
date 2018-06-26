@@ -29,6 +29,7 @@
 extern "C" {
 #endif
 
+#include "sysrepo.h"
 /**
  * @defgroup trees Tree Manipulation Utilities
  * @{

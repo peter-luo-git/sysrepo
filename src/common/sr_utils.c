@@ -460,7 +460,7 @@ sr_fd_set_nonblock(int fd)
 
 #if defined(SO_PEERCRED)
 
-#if !defined(SCM_CREDENTIALS)
+#if !defined(__USE_GNU)
 /* struct ucred is ifdefined behind __USE_GNU, but __USE_GNU is not defined */
 struct ucred {
     pid_t pid;    /* process ID of the sending process */
